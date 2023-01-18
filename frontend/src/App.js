@@ -10,6 +10,7 @@ import { Carrito } from "./components/Carrito";
 import {DataProvider} from './context/DataProvider';
 import { BrowserRouter as Router} from "react-router-dom";
 import Pages from "./components/Page.js";
+import Footer from "./pages/global/Footer"
 import "boxicons";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Header />
       <Carrito />
       <Pages />
+      <Footer />
       </Router>
     </div>
     </DataProvider>
