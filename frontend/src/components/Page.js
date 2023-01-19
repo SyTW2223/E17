@@ -1,9 +1,11 @@
 import React from "react";
 import { Switch, Route} from "react-router-dom";
-import Inicio from "./page/inicio";
+// import Inicio from "./page/inicio";
 import Home from "../pages/home/Home"
 import { ProductosList } from "./page/productos";
 import { ProductosDetalles } from "./page/productos/ProductosDetalles";
+import Cuenta from "./page/login/index";
+import Login from "./page/login/Login";
 
 export default function Page() {
   return (
@@ -12,6 +14,7 @@ export default function Page() {
 				<Route path="/" exact component={Home} />
 				<Route path="/productos" exact component={ProductosList} />
         <Route path="/producto/:id" exact component={ProductosDetalles} />
+        <Route path="/login" exact component={Cuenta} />
 			</Switch>
     </section>
   );

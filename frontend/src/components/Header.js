@@ -2,7 +2,8 @@ import React, { useContext} from "react";
 import { DataContext } from "../context/DataProvider";
 import { Link } from "react-router-dom";
 import Icono from "../images/icono.jpg";
-//import { Login } from "../components/Login.js";
+// import {Cuenta} from "../components/page/login/index"
+import { Login } from "../components/page/login/Login";
 //import { useState } from "react";
 
 export const Header = () => {
@@ -17,9 +18,6 @@ export const Header = () => {
 
   return (
     <header>
-      <div className="menu">
-      <box-icon name="menu"></box-icon>
-      </div>
       <Link to="/">
       <div className="logo">
         <img src={Icono} alt="Nike" width="150" />
@@ -37,9 +35,13 @@ export const Header = () => {
         <box-icon name="cart"></box-icon>
         <span className="item__total"> {carrito.length} </span>
       </div>
-      <li>
-        <Link to="/login"><box-icon name="user"></box-icon></Link>
-      </li>
+      <ul>
+        <li>
+          <Link to="/login">
+            <box-icon name="user"></box-icon>
+          </Link>
+        </li>
+      </ul>
     </header>
   );
 };
