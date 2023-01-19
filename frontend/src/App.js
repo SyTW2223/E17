@@ -10,7 +10,7 @@ import { Carrito } from "./components/Carrito";
 import {DataProvider} from './context/DataProvider';
 import { BrowserRouter as Router} from "react-router-dom";
 import Pages from "./components/Page.js";
-import Footer from "./pages/global/Footer"
+import Footer from "./components/Footer"
 import "boxicons";
 
 function App() {

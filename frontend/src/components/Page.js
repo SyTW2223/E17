@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route} from "react-router-dom";
 // import Inicio from "./page/inicio";
-import Home from "../pages/home/Home"
+import Home from "../components/page/inicio/Home"
 import { ProductosList } from "./page/productos";
 import { ProductosDetalles } from "./page/productos/ProductosDetalles";
 import Cuenta from "./page/login/index";

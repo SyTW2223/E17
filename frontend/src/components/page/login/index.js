@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Login } from "./Login";
 import { Register } from "./Register";
 import { Logeado } from "./Logeado"
-import Home from "../../../pages/home/Home"
+import Home from "../inicio/Home"
 // import { Header } from "../../../components/Header";
 // import { Carrito } from "../../../components/Carrito";
 // import Footer from "../../../pages/global/Footer"
