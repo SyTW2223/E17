@@ -6,7 +6,7 @@ import { Login } from "./Login";
 import { Register } from "./Register";
 import { Logeado } from "./Logeado"
 import Home from "../inicio/Home"
-// import { Header } from "../../../components/Header";
+import { Header } from "../../../components/Header";
 // import { Carrito } from "../../../components/Carrito";
 // import Footer from "../../../pages/global/Footer"
 // import "boxicons";
@@ -21,7 +21,7 @@ export default function Cuenta () {
   
     return (
       <div>
-      <header>
+      {/* <header>
         <ul>
           <li><a 
             href="#"
@@ -36,8 +36,9 @@ export default function Cuenta () {
             Registrarse
           </a></li>
         </ul>
-      </header>
-      <div className="App">
+      </header> */}
+      <Header/>
+      <div className="Cuenta">
         {
           {
             'login': <Login onFormSwitch={toggleForm} />,
