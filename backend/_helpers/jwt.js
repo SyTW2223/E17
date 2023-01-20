@@ -8,8 +8,8 @@ function jwt() {
     return expressjwt({ secret, algorithms: ['HS256'] }).unless({
         path: [
             // public routes that don't require authentication
-            '/app/userlog/login',
-            '/app/users/signup'
+            '/users/login',
+            '/users/signup'
         ]
     });
 }
