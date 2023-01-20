@@ -18,11 +18,13 @@ export const Header = () => {
 
   return (
     <header>
+    
       <Link to="/">
       <div className="logo">
-        <img src={Icono} alt="Nike" width="150" />
+        <img src={Icono} alt="Nike" width="100" />
       </div>
       </Link>
+      
       <div className="icon">
       <ul>
         <li>
@@ -35,21 +37,19 @@ export const Header = () => {
           <box-icon name="book"></box-icon>
           </Link>
         </li>
-      </ul>
-      </div>
-      <div className="cart" onClick={toogleMenu}>
-        <box-icon name="cart"></box-icon>
-        <span className="item__total"> {carrito.length} </span>
-      </div>
-      <div className="icon">
-      <ul>
         <li>
           <Link to="/login">
             <box-icon name="user"></box-icon>
           </Link>
         </li>
-      </ul>
+        <li>
+        <div className="cart" onClick={toogleMenu}>
+          <box-icon name="cart"></box-icon>
+        <span className="item__total"> {carrito.length} </span>
       </div>
+      </li>
+      </ul>
+    </div>
     </header>
   );
 };

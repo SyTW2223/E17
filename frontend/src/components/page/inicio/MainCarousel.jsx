@@ -74,8 +74,8 @@ const MainCarousel = () => {
             textAlign="left"
             backgroundColor="rgb(0, 0, 0, 0.4)"
             position="absolute"
-            top="46%"
-            left={isNonMobile ? "10%" : "0"}
+            top="40%"
+            left={isNonMobile ? "20%" : "0"}
             right={isNonMobile ? undefined : "0"}
             margin={isNonMobile ? undefined : "0 auto"}
             maxWidth={isNonMobile ? undefined : "240px"}

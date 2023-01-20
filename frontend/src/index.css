@@ -17,7 +17,7 @@ code {
     width: 100%;
     min-height: 100vh;
     margin: auto;
-    box-shadow: 0 2px 6px #08a05ca4;;
+    /*box-shadow: 0 2px 6px #08a05ca4;;*/
     padding: 0 15px;
     box-sizing: border-box;
     position: relative;
@@ -58,12 +58,30 @@ code {
     height: 60px;
 }
 
-/* ----------------- LOGIN Y REGUSTER -------------------*/
-.auth-form-container, .login-form, .register-form {
+/* ----------------- LOGIN Y REGUISTER -------------------*/
+.auth-form-container, .login-form{
     /* lo personalizamos como el resto de la página */
     /* debajo del header */
     position: relative;
     top: 110px;
+    max-width: 1555px;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    /* box-shadow: 0 2px 6px #08a05ca4;; */
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.register-form {
+    /* lo personalizamos como el resto de la página */
+    /* debajo del header */
+    position: relative;
+    top: 10px;
     max-width: 1555px;
     width: 100%;
     min-height: 100vh;
@@ -98,7 +116,7 @@ code {
     color: #69322b; */
     width: 25%;
     padding: 15px;
-    border-radius: 2px;
+    border-radius: 10px;
     border: none;
     margin: 20px 0;
     font-size: 15px;
@@ -116,10 +134,14 @@ code {
 
 /* ----------------- ICONOS -------------------*/
 .icon {
-    height: 50px;
-    width: 50px;
+    /* height: 50px;
+    width: 50px; */
     background: none;
     display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
   
 .icon + .icon {
@@ -128,7 +150,7 @@ code {
 
 /* ----------------- HEADER -------------------*/
 header{
-    width: 97%;
+    width: 98%;
     min-height: 100px;
     max-width:1530px;
     overflow: hidden;
@@ -139,7 +161,8 @@ header{
     position: absolute;
     /* box-sizing: border-box ; */
     background-color: white;
-    box-shadow: 0 10px 10px #08a05c50;
+    /*box-shadow: 0 10px 10px #08a05c50;*/
+    box-shadow: none;
 }
 a{      
     color: black;
@@ -147,7 +170,8 @@ a{
     text-transform: uppercase;
 }
 a:hover{
-    color: #08a05c;
+    /*color: #08a05c;*/
+    color: none;
 }
 .menu{
     display: none;
@@ -173,23 +197,28 @@ header ul li a{
     cursor: pointer;
 }
 .cart box-icon{
-    width: 45px;
-    height: 45px;
+    /* width: 50px;
+    height: 50px; */
+    background: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .cart span{
     position: absolute;
-    top: -1rem;
+    top: -0.5rem;
     right: -1.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     padding: 0rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     border-radius: 50%;
     background-color: crimson;
 }
@@ -518,6 +547,12 @@ header ul li a{
     text-transform: uppercase;
     font-family: Helvetica, sans-serif
     ;
+}
+
+/* ------------ FUENTE TITULOS ---*/
+.titulo-inicio-registro{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
