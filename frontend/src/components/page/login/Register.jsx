@@ -15,7 +15,7 @@ export const Register = (props) => {
             email: email,
             password: pass
           };
-        fetch('http://localhost:3000/app/userlog/signup', {
+        fetch('https://bookerin.onrender.com/users/signup', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
