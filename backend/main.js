@@ -20,7 +20,7 @@ const errorHandler = require('./_helpers/error-handler')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const cors = require('cors');User
+const cors = require('cors');
 
 app.use(cors({
   origin: 'http://localhost:3001'
