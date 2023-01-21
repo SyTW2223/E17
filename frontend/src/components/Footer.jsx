@@ -28,10 +28,9 @@ function Footer() {
               Bookerin
             </Typography>
             <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat
+              Bookerin es una librería online creada como proyecto final para
+              la asignatura de Sistemas y Tecnologías Web del itinerario 5 de 
+              la Universidad de La Laguna.
             </div>
           </Box>
 
@@ -39,7 +38,7 @@ function Footer() {
             <Typography variant="h4" fontWeight="bold" mb="30px">
               Contacto
             </Typography>
-            <Typography mb="30px">Jonay (apellidos)</Typography>
+            <Typography mb="30px">Jonay Méndez Márquez</Typography>
             <Typography mb="30px">Felipe Gómez Fuentes</Typography>
             <Typography mb="30px">Noelia Ibáñez Silvestre </Typography>
           </Box>
