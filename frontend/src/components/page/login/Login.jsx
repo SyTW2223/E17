@@ -11,7 +11,7 @@ export const Login = (props) => {
             email: email,
             password: pass
           };
-        fetch('http://localhost:3000/app/userlog/login', {
+        fetch('https://bookerin.onrender.com/users/login', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
@@ -34,6 +34,9 @@ export const Login = (props) => {
     return (
         <div className="auth-form-container">
             <div id="error"></div>
+            <div className="titulo-inicio-registro">
+                <h1>Inicie sesión</h1>
+            </div>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email">Email</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email"/>
@@ -42,8 +45,9 @@ export const Login = (props) => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
 
                 <button type="submit">Log in</button>
+                <button className="link-btn" onClick={() => props.onFormSwitch('signup')}>¿Todavía no tiene una cuenta? Regístrese aquí</button>
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('signup')}>¿Todavía no tiene una cuenta? Regístrese aquí</button>
+            
         </div>
     )
 }

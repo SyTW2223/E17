@@ -4,7 +4,7 @@ export const Logeado = (props) => {
 
     const showProfile = (e) => {
         e.preventDefault();
-        fetch('http://localhost:3000/app/users/', {
+        fetch('https://bookerin.onrender.com/users/', {
             method: 'GET',
             headers: {
                 "Content-Type": "application/json",
