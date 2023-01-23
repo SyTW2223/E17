@@ -1,5 +1,5 @@
-import { Login } from '../components/Login';
-import { render, screen } from '@testing-library/react';
+import { Login } from '../components/page/login/Login';
+import { render } from '@testing-library/react';
 
 // hacemos test de Login
 // comprobamos que existe la pagina

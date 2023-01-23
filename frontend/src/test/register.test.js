@@ -1,12 +1,6 @@
-import { Register } from '../components/Register';
-import { render, screen } from '@testing-library/react';
+import { Register } from '../components/page/login/Register';
+import { render } from '@testing-library/react';
 
-import sum from './sum.js';
-
-it('sums numbers', () => {
-  expect(sum(1, 2)).toEqual(3);
-  expect(sum(2, 2)).toEqual(4);
-});
 
 // hacemos test de Register
 // comprobamos que existe la pagina

@@ -4,6 +4,7 @@ export const Register = (props) => {
 
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+    const [pass2, setPass2] = useState('');
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
 
@@ -13,7 +14,8 @@ export const Register = (props) => {
             username: name,
             phone: phone,
             email: email,
-            password: pass
+            password: pass,
+            password2: pass2
           };
         fetch('https://bookerin.onrender.com/users/signup', {
             method: 'POST',
@@ -49,7 +51,7 @@ export const Register = (props) => {
                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
 
                 <label htmlFor="password">Retype password</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
+                <input value={pass2} onChange={(e) => setPass2(e.target.value)} type="password" placeholder="********" id="password" name="password"/>
 
                 <button type="submit">Sign up</button>
                 <button className="link-btn" onClick={() => props.onFormSwitch('login')}>¿Ya tiene una cuenta? Inicie sesión aquí</button>
