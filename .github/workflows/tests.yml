@@ -18,6 +18,8 @@ jobs:
       with:
         node-version: 19
     - name: Instalar dependencias
+      working-directory: ./frontend
       run: npm install
     - name: Test frontend
+      working-directory: ./frontend
       run: npm test
